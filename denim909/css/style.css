@@ -102,7 +102,7 @@ nav {
   justify-content: flex-end;
   padding: 0;
   position: relative;
-  background-image: url('../images/hero.jpg');
+  background-image: url('../images/press/web/Denim909-aka-Mimbot-4.jpg');
   background-size: cover;
   background-position: center 20%;
 }
@@ -336,11 +336,37 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
 }
-.photos-grid img {
+.photo-item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.photo-item img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
+  transition: opacity 0.2s;
+}
+.photo-item:hover img {
+  opacity: 0.85;
+}
+.photo-dl {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.photo-dl .material-symbols-outlined {
+  font-size: 20px;
 }
 
 /* ─── CONTACT ────────────────────────────────── */
