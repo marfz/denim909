@@ -336,6 +336,9 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
 }
+.photos-grid .photo-item:last-child {
+  grid-column: 2;
+}
 .photo-item {
   position: relative;
   display: block;
@@ -448,6 +451,7 @@ footer {
   .music-grid, .roots-tracks { grid-template-columns: 1fr; }
   .visuals-block { grid-template-columns: 1fr; padding: 32px; gap: 28px; }
   .photos-grid { grid-template-columns: repeat(2, 1fr); }
+  .photos-grid .photo-item:last-child { grid-column: auto; }
   .rider-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 480px) {
